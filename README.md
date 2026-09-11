@@ -1,15 +1,9 @@
 # foundations
 
-To install dependencies:
+Hamidi Mariam 
+mail ul:mariam.hamidi5@etu.univ-lorraine.fr
 
-```bash
-bun install
-```
-
-To run:
-
-```bash
-bun run index.ts
-```
-
-This project was created using `bun init` in bun v1.3.10. [Bun](https://bun.com) is a fast all-in-one JavaScript runtime.
+Questions observation exercice 2:
+1.
+2.
+3.

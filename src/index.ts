@@ -1,1 +1,2 @@
-console.log("1+1===2 : ", 1 + 1 === 2);
+import { teams } from "./data/teams";
+

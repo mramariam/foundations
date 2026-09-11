@@ -1,6 +1,7 @@
 import { teams } from "./data/teams";
 import { crewMembers } from "./data/crewMembers";
 import { crewCards, getDisplayName, hasSkills, isAvailable, } from "./crew";
+import { addPartner } from "./partnerships";
 
 
 let premiereEquipe = teams[0];
@@ -25,10 +26,18 @@ if (memberDispo.length !== 0) {
     console.log('Aucun membre n\'est disponible.');
 };
 
-const nomDesMembres=crewMembers.map(c=>c.name);
+const nomDesMembres = crewMembers.map(c => c.name);
 console.log(nomDesMembres);
 
-const communicationSkill=crewMembers.filter(c=>hasSkills(c,"communication"));
+const communicationSkill = crewMembers.filter(c => hasSkills(c, "communication"));
 console.table(communicationSkill);
 
-console.table(crewCards)
+console.table(crewCards);
+
+if (teams[0]) {
+    console.log(teams[0]);
+    const nouvelle = addPartner(teams[0], 2)
+    console.log(nouvelle)
+} else {
+    console.log("Pas d'équipe")
+}
